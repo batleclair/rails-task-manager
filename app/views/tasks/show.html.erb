@@ -1,0 +1,26 @@
+<div class="container mt-5">
+  <h1><%= @task.title %></h1>
+  <div class="card p-4 grey-background">
+    <p><%= @task.details %></p>
+  </div>
+  <span>
+    <% if @task.completed %>
+    <i class="far fa-check-square me-3"></i>
+    <% else %>
+    <i class="far fa-square me-3"></i>
+    <% end %>
+    <%= @task.completed ? 'This task is completed' : 'This task has not been completed yet' %>
+  </span>
+
+  <div class="controls">
+    <span class="mt-3">
+      <i class="fas fa-undo"></i>
+      <h6 class="inline"><%= link_to 'Back', tasks_path %></h6>
+    </span>
+
+    <span class="mt-3">
+      <i class="far fa-edit"></i>
+      <h6 class="inline"><%= link_to 'Edit', tasks_edit_path %></h6>
+    </span>
+  </div>
+</div>

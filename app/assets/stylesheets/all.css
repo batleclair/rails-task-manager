@@ -1,0 +1,35 @@
+.list-formatted {
+  list-style: none;
+  padding: 0;
+}
+
+.list-formatted a {
+  text-decoration: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a i {
+  color: lightgray;
+}
+
+a i:hover {
+  color: grey;
+}
+
+.grey-background {
+  background-color: rgba(200,200,200,0.5);
+  font-style: italic;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inline {
+  display: inline;
+}
